@@ -8,7 +8,7 @@ module NumbersApi
         wsdl: NumbersApi::WSDLS[:debtor_service],
         convert_request_keys_to: :camelcase,
         # TODO REMOVE SSL_VERIFY_MODE IN PRODUCTION!
-        ssl_verify_mode: :none,
+        # ssl_verify_mode: :none,
         env_namespace: :soapenv,
         namespace_identifier: :com,
         #soap_header: { auth_header: { username: configuration.username, token: configuration.api_key }  }
