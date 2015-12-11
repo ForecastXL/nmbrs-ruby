@@ -3,7 +3,7 @@
 
 ## Installation
 
-  $ gem install numbers_api
+    $ gem install numbers_api
 
 
 ## Example Usage
