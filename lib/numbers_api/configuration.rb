@@ -5,7 +5,7 @@ module NumbersApi
     attr_accessor :api_key
     attr_accessor :company
 
-    def initialize(username, api_key, company)
+    def initialize(username, api_key, company = nil)
       @username = username
       @api_key = api_key
       @company = company
