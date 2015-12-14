@@ -18,7 +18,7 @@
 
   Make a request to the service
 
-    $ company_service.request(:get_list_all)
+    $ company_service.request(:list_get_all)
 
   Optionally you can pass in extra parameters, for example:
 
