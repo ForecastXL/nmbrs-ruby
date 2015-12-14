@@ -34,3 +34,19 @@
 ### Api documentation
 
   https://support.nmbrs.nl/hc/nl/sections/200668406-Nmbrs-API-v2-1-Latest-Reference
+
+### Mapping to ForecastXL objects
+
+  Department = company_service.request(:cost_center_get_list, company_id: 37731)
+    code = code
+    name = description
+
+  Product = company_service.request(:cost_unit_get_list, company_id: 37731)
+    code = code
+    name = description
+
+  Relation = employee_service.request(:list_get_by_company, company_id: 37731)
+    code = number
+    name = display_name
+  
+  
