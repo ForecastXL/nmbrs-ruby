@@ -30,7 +30,6 @@
   Check lib/numbers_api/company_service.rb / debtor_service.rb / employee_service.rb
 
 
-
 ### Api documentation
 
   https://support.nmbrs.nl/hc/nl/sections/200668406-Nmbrs-API-v2-1-Latest-Reference

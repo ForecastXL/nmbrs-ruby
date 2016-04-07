@@ -8,7 +8,7 @@ module NumbersApi
 
       @client = Savon.client(
         wsdl: NumbersApi::WSDLS[:company_service],
-        convert_request_keys_to: :camelcase,
+        #convert_request_keys_to: :camelcase,
         # TODO REMOVE SSL_VERIFY_MODE IN PRODUCTION!
         # ssl_verify_mode: :none,
         env_namespace: :soapenv,
