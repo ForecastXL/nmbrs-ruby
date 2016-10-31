@@ -1,16 +1,15 @@
-module NumbersApi
+module Nmbrs
   class EmployeeService
     def initialize(configuration)
       @configuration = configuration
 
       @client = Savon.client(
-        wsdl: NumbersApi::WSDLS[:employee_service],
+        wsdl: Nmbrs::WSDLS[:employee_service],
         # convert_request_keys_to: :camelcase,
         # TODO REMOVE SSL_VERIFY_MODE IN PRODUCTION!
         # ssl_verify_mode: :none,
         env_namespace: :soapenv,
         namespace_identifier: :com,
-        #soap_header: { auth_header: { username: configuration.username, token: configuration.api_key }  }
         soap_header: { 'com:AuthHeader' => { 'com:Username' => configuration.username, 'com:Token' => configuration.api_key }  }
       )
     end

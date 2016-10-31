@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
-# Specify your gem's dependencies in numbers_api.gemspec
+# Specify your gem's dependencies in nmbrs-ruby.gemspec
 gemspec

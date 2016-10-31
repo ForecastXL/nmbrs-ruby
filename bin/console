@@ -8,10 +8,9 @@ PRY_PATH=$(which pry)
 
 if [ -x $PRY_PATH ]
 then
-  exec bundle exec ruby $PRY_PATH -Ilib -r numbers_api -r numbers_api/console.rb
+  exec bundle exec ruby $PRY_PATH -Ilib -r nmbrs-ruby -r nmbrs-ruby/console.rb
 else
   red='\033[0;31m'
   NC='\033[0m'
   echo "${red}Pry was not found or not executable. Make sure \`which pry\` returns an executable.${NC}"
-
 fi

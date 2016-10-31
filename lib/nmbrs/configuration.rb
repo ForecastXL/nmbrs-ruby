@@ -1,4 +1,4 @@
-module NumbersApi
+module Nmbrs
 
   class Configuration
     attr_accessor :username
@@ -19,5 +19,4 @@ module NumbersApi
       }
     end
   end
-
 end

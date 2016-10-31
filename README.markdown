@@ -3,18 +3,18 @@
 
 ## Installation
 
-    $ gem install numbers_api
+    $ gem install nmbrs
 
 
 ## Example Usage
 
   Initialize a configuration object:
 
-    $ config = NumbersApi::Configuration.new("user@email.com", "nmbrs_api_key_example123", "numbers_company_id (optional)")
+    $ config = Nmbrs::Configuration.new("user@email.com", "nmbrs_api_key_example123", "numbers_company_id (optional)")
 
   Initialize a service (company_service, debtor_service or employee_service)
 
-    $ company_service = NumbersApi::CompanyService.new(config)
+    $ company_service = Nmbrs::CompanyService.new(config)
 
   Make a request to the service
 
@@ -27,7 +27,7 @@
 
 ### For a list of available methods:
 
-  Check lib/numbers_api/company_service.rb / debtor_service.rb / employee_service.rb
+  Check lib/nmbrs/company_service.rb / debtor_service.rb / employee_service.rb
 
 
 ### Api documentation
@@ -47,5 +47,5 @@
   Relation = employee_service.request(:list_get_by_company, company_id: 37731)
     code = number
     name = display_name
-  
-  
+
+

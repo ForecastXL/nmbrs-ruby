@@ -3,8 +3,7 @@
 # Require this file using `require "spec_helper"` to ensure that it is only
 # loaded once.
 
-require File.expand_path('../../lib/numbers_api', __FILE__)
-
+require File.expand_path('../../lib/nmbrs', __FILE__)
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
@@ -17,8 +16,4 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = 'random'
-
 end
-
-
-

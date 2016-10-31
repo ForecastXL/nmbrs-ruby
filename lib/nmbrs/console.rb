@@ -1,3 +1,3 @@
 Pry.config.prompt = lambda do |context, nesting, pry|
-  "[numbers_api] #{context} > "
+  "[nmbrs] #{context} > "
 end
